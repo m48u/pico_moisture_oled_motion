@@ -11,6 +11,7 @@ WIDTH =128
 HEIGHT= 64
 alarm_led = Pin(10, Pin.OUT, value=0)
 
+
 print("initialisiere Display, Pin und LED")
 i2c=I2C(1,scl=Pin(SCL_Pin),sda=Pin(SDA_Pin),freq=200000)
 oled_display = SSD1306_I2C(WIDTH,HEIGHT,i2c)
